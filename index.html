@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calc ROI</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper_calc">
+            <div class="calc">
+                <div class="calc_title">
+                    <h1>Calculator ROI</h1>
+                </div>
+                <form class="calc_form">
+                    <div class="calc_form_date">
+                        <div class="date_sales">
+                            <p>Sales proceeds:</p>
+                            <div class="sales_input">
+                                <input class="sales" type="number" name="sales" id="sales" placeholder="Enter sales profit">
+                                <div class="curency"></div>
+                            </div>
+                        </div>
+                        <div  class="date_expenses">   
+                            <p>Expenses:</p>
+                            <div class="sales_input">
+                                <input class="expenses" type="number" name="expenses" id="expenses" placeholder="Enter expenses">
+                                <div class="curency"></div>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="result">
+                        <p>Result ROI</p> 
+                        <span id="result"></span>
+                    </div>
+                </form>
+            </div>
+            <div class="form_mail">
+                <p>Send results by email</p>
+
+                <input class="input_mail" type="email" name="mail" id="" placeholder="Enter your email address">
+
+                <button class="btn_submit" type="submit">
+                    <p>Send my result</p>
+                </button>
+            </div>
+        </div>
+    </header>
+</body>
+<script src="./main.js"></script>
+</html>

@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: DNP regular;
+    src: url(./fonts/DINPro.woff);
+    font-weight: 400;
+}
+
+
+.wrapper_calc {
+    border: 1px solid #000;
+    max-width: 1280px;
+    box-shadow: 1px 1px 16px 10px rgba(0, 0, 0, 0.35);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.calc {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.calc_title {
+    font-family: DNP regular, sans-serif;
+    text-align: center;
+}
+
+.calc_form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-self: center;
+    flex-wrap: wrap;
+}
+
+.calc_form_date {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.calc_form_date p {
+    font-family: DNP regular, sans-serif;
+    font-size: 18px;
+}
+
+.date_sales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 483px;
+    background-color: #f8f8f8;
+    height: 140px;
+    justify-content: center;
+    gap: 10px;
+}
+
+.sales {
+    text-align: right;
+    border: none;
+    font-size: 25px;
+    width: 55%;
+    margin-right: 5px;
+    outline: none;
+}
+
+.sales_input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 40px;
+    border: 3px solid #f49a42;
+    background-color: #fff;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+  }
+input[type="number"]:hover,
+input[type="number"]:focus {
+    -moz-appearance: number-input;
+    border: none;
+}
+
+.curency {
+    background: url(./img/cur.png);
+    height: 18px;
+    width: 18px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+} 
+
+.date_expenses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 483px;
+    background-color: #f8f8f8;
+    height: 140px;
+    justify-content: center;
+    gap: 10px;
+}
+
+.expenses {
+    text-align: right;
+    border: none;
+    font-size: 25px;
+    width: 55%;
+    margin-right: 5px;
+    outline: none;
+}
+
+.result {
+    width: 100%;
+    background-color: #f8f8f8;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    height: 160px;
+}
+
+.result p {
+    font-family: DNP regular, sans-serif;
+    font-size: 18px;
+}
+
+.result span {
+    font-family: DNP regular, sans-serif;
+    font-weight: 600;
+    padding: 15px;
+    background-color: #fff;
+    width: 90%;
+    font-size: 25px;
+    text-align: center;
+    border: 3px solid #f49a42;
+}
+
+.form_mail {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-family: DNP regular, sans-serif;
+    font-size: 18px;
+    background: #FFECD9;
+    width: 60%;
+    height: 160px;
+    margin: 0 auto;
+    margin: 20px 0;
+}
+
+.input_mail {
+    border: none;
+    font-size: 18px;
+    width: 90%;
+    margin: 5px;
+    outline: none;
+    padding: 10px;
+}
+
+.btn_submit {
+    background: #f49a42;
+    border-radius: 25px;
+    padding: 5px 30px;
+    border: none;
+}
+
+
+@media (max-width: 1024px) {
+    .date_sales {
+        width: 420px;
+    }
+
+    .sales_input {
+        width: 400px;
+    }
+
+    .date_expenses {
+        width: 420px;
+    }
+
+    .sales_input {
+        width: 400px;
+    }
+}
+
+@media (max-width: 890px) {
+    .date_sales {
+        width: 370px;
+    }
+
+    .sales_input {
+        width: 350px;
+    }
+
+    .date_expenses {
+        width: 370px;
+    }
+
+    .sales_input {
+        width: 350px;
+    }
+}
+
+@media (max-width: 790px) {
+    .date_sales {
+        width: 320px;
+    }
+
+    .sales_input {
+        width: 300px;
+    }
+
+    .date_expenses {
+        width: 320px;
+    }
+
+    .sales_input {
+        width: 300px;
+    }
+}
+
+@media (max-width: 690px) {
+    .date_sales {
+        width: 275px;
+    }
+
+    .sales_input {
+        width: 250px;
+    }
+
+    .date_expenses {
+        width: 275px;
+    }
+
+    .sales_input {
+        width: 250px;
+    }
+}
+
+@media (max-width: 590px) {
+    .date_sales {
+        width: 100%;
+    }
+
+    .sales_input {
+        width: 90%;
+    }
+
+    .date_expenses {
+        width: 100%;
+    }
+
+    .sales_input {
+        width: 90%;
+    }
+
+    .form_mail {
+        width: 80%;
+    }
+}
